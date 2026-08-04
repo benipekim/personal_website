@@ -12,7 +12,7 @@ const tabs = [
 ];
 
 const SECTION_BY_INDEX: Record<number, string> = {
-  2: "success",
+  2: "career",
   3: "hobbies",
   4: "social-media",
 };

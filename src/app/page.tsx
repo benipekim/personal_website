@@ -71,16 +71,78 @@ export default function Home() {
 
       <section
         id="hobbies"
-        className="flex min-h-screen w-full items-center justify-center"
+        className="flex h-screen w-full flex-col justify-center gap-8 overflow-hidden px-6 py-4 sm:px-16"
       >
-        <h2 className="text-3xl font-semibold tracking-tight">Hobbies</h2>
+        <h2 className="font-serif text-2xl font-light lowercase tracking-tight text-black sm:text-4xl">
+          hobbies.
+        </h2>
+
+        <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-8 sm:grid-cols-2">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-[190px] sm:mx-0 sm:max-w-[240px]">
+            <Image
+              src="/dance-photos-v2.png"
+              alt="Dance performances and competitions"
+              fill
+              sizes="240px"
+              unoptimized
+              className="object-contain"
+            />
+          </div>
+          <div>
+            <h3 className="font-serif text-xl font-semibold text-black sm:text-2xl">
+              Dance
+            </h3>
+            <div className="mt-2 space-y-3 font-serif text-xs font-light italic text-[#999999] sm:text-base">
+              <p>
+                Became a member of KUDANS Swing Dance Team and got up on
+                stage in various festivals and organizations, performing a
+                few branches of Jazz Dance: Lindy Hop, Authentic Solo Jazz,
+                Rhythm&amp;Blues, Blues and Hip Hop.
+              </p>
+              <p>
+                Competed with our Authentic Solo Jazz team at ILHC
+                (International Lindy Hop Championships) and achieved third
+                place in Europe.
+              </p>
+              <p>
+                Attended many dance festivals as a dancer, competitor and
+                volunteer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-8 sm:grid-cols-2">
+          <div>
+            <h3 className="font-serif text-xl font-semibold text-black sm:text-2xl">
+              Yoga &amp; Mindfulness
+            </h3>
+            <p className="mt-2 font-serif text-xs font-light italic text-[#999999] sm:text-base">
+              &ldquo;Yoga, Pranayama, and Meditation are at the heart of my
+              daily routine. My ultimate goal is to build an inclusive and
+              accessible yoga community—a safe space where movement,
+              breath, and mindfulness are approachable for everyone,
+              regardless of their background or level.&rdquo;
+            </p>
+          </div>
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-[190px] sm:max-w-[240px]">
+            <Image
+              src="/yoga-photos.png"
+              alt="Yoga and handstand practice"
+              fill
+              sizes="240px"
+              unoptimized
+              className="object-contain"
+            />
+          </div>
+        </div>
       </section>
 
       <section
-        id="success"
+        id="career"
         className="flex min-h-screen w-full items-center justify-center"
       >
-        <h2 className="text-3xl font-semibold tracking-tight">Success</h2>
+        <h2 className="text-3xl font-semibold tracking-tight">Career</h2>
       </section>
     </>
   );
