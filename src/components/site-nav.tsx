@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { Home, Share2, Heart, Trophy } from "lucide-react";
 import { ExpandableTabs } from "@/components/ui/expandable-tabs";
 
@@ -14,9 +12,9 @@ const tabs = [
 ];
 
 const SECTION_BY_INDEX: Record<number, string> = {
-  2: "social-media",
+  2: "success",
   3: "hobbies",
-  4: "success",
+  4: "social-media",
 };
 
 export function SiteNav() {
@@ -35,24 +33,8 @@ export function SiteNav() {
   };
 
   return (
-    <nav className="fixed inset-x-0 top-6 z-50 flex items-center px-6">
-      <Link
-        href="/"
-        className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full ring-2 ring-background"
-      >
-        <Image
-          src="/profile.png"
-          alt="İpek Ateş"
-          fill
-          sizes="40px"
-          className="object-cover"
-          priority
-        />
-      </Link>
-      <div className="flex flex-1 justify-center">
-        <ExpandableTabs tabs={tabs} onChange={handleChange} />
-      </div>
-      <div className="w-10 shrink-0" />
+    <nav className="fixed inset-x-0 top-6 z-50 flex items-center justify-center px-6">
+      <ExpandableTabs tabs={tabs} onChange={handleChange} />
     </nav>
   );
 }
