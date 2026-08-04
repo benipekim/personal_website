@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Link as LinkIcon } from "lucide-react";
+import { Link as LinkIcon, Lightbulb } from "lucide-react";
 import { ShaderBackground } from "@/components/ui/simplex-noise-spots";
 
 function Bold({ children }: { children: React.ReactNode }) {
@@ -41,7 +41,10 @@ export default function Home() {
           </h2>
           <div className="mt-3 space-y-6 font-serif text-lg italic font-light text-[#999999] sm:text-xl">
             <p>
-              Hi there, I&apos;m <Bold>İpek</Bold> 😏. I study{" "}
+              Hi there, I&apos;m <Bold>İpek</Bold> ☀️. 
+            </p>
+            <p>
+              I study{" "}
               <Bold>Industrial Engineering</Bold> and <Bold>Economics</Bold>{" "}
               at <Bold>Koç University</Bold>. I&apos;m passionate about{" "}
               <Bold>building</Bold> things and turning ideas into real{" "}
@@ -61,6 +64,81 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <section
+        id="career"
+        className="flex min-h-screen w-full flex-col justify-start gap-6 overflow-hidden px-6 pt-20 pb-4 sm:px-16 sm:pt-24"
+      >
+        <h2 className="font-serif text-2xl font-light lowercase tracking-tight text-black sm:text-4xl">
+          career.
+        </h2>
+
+        <div className="mx-auto w-full max-w-3xl">
+          <h3 className="text-sm font-semibold tracking-wide text-black uppercase">
+            Highlights &amp; Academic Milestones
+          </h3>
+          <ul className="mt-3 space-y-3 font-serif text-base italic font-light text-[#999999] sm:text-lg">
+            <li>
+              <Bold>National 10th Place in YKS (2023):</Bold> Ranked 10th
+              nationwide among over 3.5 million candidates in
+              Türkiye&apos;s Higher Education Institutions Exam.
+            </li>
+            <li>
+              <Bold>Koç University Teaching &amp; Mentorship:</Bold> Selected
+              as Section Leader for COMP125: Introduction to
+              Programming(Python), guiding students through lab hours and
+              complex core concepts.
+            </li>
+            <li>
+              <Bold>Academic Excellence &amp; Merit Scholarships:</Bold>{" "}
+              Recipient of the Koç University Full Scholarship (KUDEB), Vehbi
+              Koç Honor Award, and Cahit Arf Scholarship.
+            </li>
+            <li>
+              <Bold>Corporate Relations at Business Club:</Bold> Managed
+              corporate communications and event operations for the
+              Networking Night Committee.
+            </li>
+            <li>
+              <Bold>Engineering &amp; Tech Projects:</Bold> Contributed to
+              fixed-wing UAV design and electronics (2022), as well as
+              research on non-chemical pest control (2021).
+            </li>
+          </ul>
+        </div>
+
+        <div className="mx-auto flex w-full max-w-3xl gap-3">
+          <div className="flex flex-col items-center pt-0.5">
+            <Lightbulb className="size-4 shrink-0 text-black" />
+            <div className="mt-2 w-px flex-1 bg-black/15" />
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold tracking-wide text-black uppercase">
+              Current Focus &amp; AI Research
+            </h3>
+            <div className="mt-3 space-y-3 font-serif text-base italic font-light text-[#999999] sm:text-lg">
+              <p>
+                I am currently completing <Bold>online courses</Bold> to
+                deepen my core knowledge of machine learning and deep
+                learning.
+              </p>
+              <p>
+                Parallel to this, I am actively exploring{" "}
+                <Bold>&quot;vibe coding&quot; workflows</Bold> in{" "}
+                <Bold>VS Code with GitHub Copilot</Bold>—leveraging
+                AI-assisted development tools to rapidly prototype web
+                applications and streamline engineering processes.
+              </p>
+              <p>
+                To apply these skills in an academic setting, I am
+                preparing to collaborate with a faculty member at Koç
+                University on an <Bold>AI/ML research project</Bold> in the
+                near future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         id="social-media"
@@ -138,11 +216,11 @@ export default function Home() {
               Yoga &amp; Mindfulness
             </h3>
             <p className="mt-2 font-serif text-sm font-light italic text-[#999999] sm:text-lg">
-              &ldquo;Yoga, Pranayama, and Meditation are at the heart of my
+              Yoga, Pranayama, and Meditation are at the heart of my
               daily routine. My ultimate goal is to build an inclusive and
               accessible yoga community—a safe space where movement,
               breath, and mindfulness are approachable for everyone,
-              regardless of their background or level.&rdquo;
+              regardless of their background or level.
             </p>
           </div>
           <div className="relative h-[30vh] w-full sm:h-[38vh]">
@@ -156,13 +234,6 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
-
-      <section
-        id="career"
-        className="flex min-h-screen w-full items-center justify-center"
-      >
-        <h2 className="text-3xl font-semibold tracking-tight">Career</h2>
       </section>
     </>
   );
