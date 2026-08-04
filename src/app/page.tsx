@@ -30,7 +30,7 @@ export default function Home() {
               <h1 className="font-serif text-2xl font-semibold text-black sm:text-3xl">
                 İpek Ateş
               </h1>
-              <p className="text-sm text-[#999999] sm:text-base">
+              <p className="text-sm text-white sm:text-base">
                 Student at Koç University
               </p>
             </div>
@@ -67,8 +67,16 @@ export default function Home() {
 
       <section
         id="career"
-        className="flex min-h-screen w-full flex-col justify-start gap-6 overflow-hidden px-6 pt-20 pb-4 sm:px-16 sm:pt-24"
+        className="relative min-h-screen w-full overflow-hidden"
       >
+        <Image
+          src="/section-background.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority={false}
+        />
+        <div className="relative z-10 flex min-h-screen w-full flex-col justify-start gap-6 px-6 pt-20 pb-4 sm:px-16 sm:pt-24">
         <h2 className="font-serif text-2xl font-light lowercase tracking-tight text-black sm:text-4xl">
           career.
         </h2>
@@ -138,13 +146,21 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section
         id="social-media"
-        className="flex min-h-screen w-full items-center justify-center"
+        className="relative flex min-h-screen w-full items-center justify-center overflow-hidden"
       >
-        <h2 className="text-3xl font-semibold tracking-tight">
+        <Image
+          src="/section-background.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority={false}
+        />
+        <h2 className="relative z-10 text-3xl font-semibold tracking-tight">
           Social Media
         </h2>
       </section>
