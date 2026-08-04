@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Link as LinkIcon } from "lucide-react";
 import { ShaderBackground } from "@/components/ui/simplex-noise-spots";
 
 function Bold({ children }: { children: React.ReactNode }) {
@@ -78,31 +80,49 @@ export default function Home() {
         </h2>
 
         <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-8 sm:grid-cols-2">
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-[190px] sm:mx-0 sm:max-w-[240px]">
+          <div className="relative h-[30vh] w-full sm:h-[38vh]">
             <Image
-              src="/dance-photos-v2.png"
+              src="/dance-v3.png"
               alt="Dance performances and competitions"
               fill
-              sizes="240px"
+              sizes="(min-width: 640px) 50vw, 100vw"
               unoptimized
               className="object-contain"
             />
           </div>
           <div>
-            <h3 className="font-serif text-xl font-semibold text-black sm:text-2xl">
+            <h3 className="font-serif text-2xl font-semibold text-black sm:text-3xl">
               Dance
             </h3>
-            <div className="mt-2 space-y-3 font-serif text-xs font-light italic text-[#999999] sm:text-base">
+            <div className="mt-2 space-y-3 font-serif text-sm font-light italic text-[#999999] sm:text-lg">
               <p>
                 Became a member of KUDANS Swing Dance Team and got up on
                 stage in various festivals and organizations, performing a
                 few branches of Jazz Dance: Lindy Hop, Authentic Solo Jazz,
-                Rhythm&amp;Blues, Blues and Hip Hop.
+                Rhythm&amp;Blues, Blues and Hip Hop.{" "}
+                <Link
+                  href="https://youtu.be/4GmiFfbBGio?si=SQihp1RlnXGIjO2u"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Watch dance performance video"
+                  className="not-italic inline-flex align-middle text-black/60 hover:text-black"
+                >
+                  <LinkIcon className="inline size-4" />
+                </Link>
               </p>
               <p>
                 Competed with our Authentic Solo Jazz team at ILHC
                 (International Lindy Hop Championships) and achieved third
-                place in Europe.
+                place in Europe.{" "}
+                <Link
+                  href="https://youtu.be/PGaycGv2TzY?si=3aB2T_nEdbj7jsdY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Watch ILHC competition video"
+                  className="not-italic inline-flex align-middle text-black/60 hover:text-black"
+                >
+                  <LinkIcon className="inline size-4" />
+                </Link>
               </p>
               <p>
                 Attended many dance festivals as a dancer, competitor and
@@ -114,10 +134,10 @@ export default function Home() {
 
         <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-8 sm:grid-cols-2">
           <div>
-            <h3 className="font-serif text-xl font-semibold text-black sm:text-2xl">
+            <h3 className="font-serif text-2xl font-semibold text-black sm:text-3xl">
               Yoga &amp; Mindfulness
             </h3>
-            <p className="mt-2 font-serif text-xs font-light italic text-[#999999] sm:text-base">
+            <p className="mt-2 font-serif text-sm font-light italic text-[#999999] sm:text-lg">
               &ldquo;Yoga, Pranayama, and Meditation are at the heart of my
               daily routine. My ultimate goal is to build an inclusive and
               accessible yoga community—a safe space where movement,
@@ -125,12 +145,12 @@ export default function Home() {
               regardless of their background or level.&rdquo;
             </p>
           </div>
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-[190px] sm:max-w-[240px]">
+          <div className="relative h-[30vh] w-full sm:h-[38vh]">
             <Image
-              src="/yoga-photos.png"
+              src="/yoga-v3.png"
               alt="Yoga and handstand practice"
               fill
-              sizes="240px"
+              sizes="(min-width: 640px) 50vw, 100vw"
               unoptimized
               className="object-contain"
             />
