@@ -42,7 +42,11 @@ const links: {
   icon: LucideIcon | ((props: SVGProps<SVGSVGElement>) => React.JSX.Element);
   href: string;
 }[] = [
-  { title: "Gmail", icon: Mail, href: "mailto:iipekatessku@gmail.com" },
+  {
+    title: "Gmail",
+    icon: Mail,
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=iipekatessku@gmail.com",
+  },
   { title: "GitHub", icon: GithubIcon, href: "https://github.com/benipekim" },
   {
     title: "LinkedIn",

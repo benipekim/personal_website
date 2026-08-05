@@ -48,7 +48,7 @@ export default function Home() {
               I study{" "}
               <Bold>Industrial Engineering</Bold> and <Bold>Economics</Bold>{" "}
               at <Bold>Koç University</Bold>. I&apos;m passionate about{" "}
-              <Bold>building</Bold> things and turning ideas into real{" "}
+              <Bold>building</Bold> systems and turning ideas into real{" "}
               <Bold>products</Bold>.
             </p>
             <p>
@@ -104,7 +104,7 @@ export default function Home() {
               Koç Honor Award, and Cahit Arf Scholarship.
             </li>
             <li>
-              <Bold>Corporate Relations at Business Club:</Bold> Managed
+              <Bold>Corporate Relations at Koç University Business Club:</Bold> Managed
               corporate communications and event operations for the
               Networking Night Committee.
             </li>
@@ -134,7 +134,7 @@ export default function Home() {
               <p>
                 Parallel to this, I am actively exploring{" "}
                 <Bold>&quot;vibe coding&quot; workflows</Bold> in{" "}
-                <Bold>VS Code with GitHub Copilot</Bold>—leveraging
+                <Bold>VS Code with GitHub</Bold>—leveraging
                 AI-assisted development tools to rapidly prototype web
                 applications and streamline engineering processes.
               </p>
@@ -239,7 +239,7 @@ export default function Home() {
 
       <section
         id="social-media"
-        className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-6"
+        className="relative flex min-h-screen w-full flex-col overflow-hidden px-6 pt-20 pb-4 sm:px-16 sm:pt-24"
       >
         <Image
           src="/section-background.png"
@@ -248,39 +248,41 @@ export default function Home() {
           className="object-cover"
           priority={false}
         />
-        <div className="relative z-10 flex w-full max-w-xl flex-col items-center gap-8 text-center">
-          <a
-            href="/İpekAteş_CV.docx"
-            download
-            className="rounded-2xl bg-black px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-black/80"
-          >
-            CV
-          </a>
+        <h2 className="relative z-10 font-serif text-2xl font-light lowercase tracking-tight text-black sm:text-4xl">
+          connect &amp; beyond.
+        </h2>
 
-          <h2 className="text-3xl font-semibold tracking-tight">
-            Connect &amp; Beyond
-          </h2>
+        <div className="relative z-10 flex flex-1 items-center justify-center">
+          <div className="flex w-full max-w-xl flex-col items-center gap-8 text-center">
+            <a
+              href="/İpekAteş_CV.docx"
+              download
+              className="rounded-2xl bg-black px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-black/80"
+            >
+              CV
+            </a>
 
-          <div className="flex gap-3 text-left">
-            <div className="flex flex-col items-center pt-0.5">
-              <Target className="size-4 shrink-0 text-black" />
-              <div className="mt-2 w-px flex-1 bg-black/15" />
+            <div className="flex gap-3 text-left">
+              <div className="flex flex-col items-center pt-0.5">
+                <Target className="size-4 shrink-0 text-black" />
+                <div className="mt-2 w-px flex-1 bg-black/15" />
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold tracking-wide text-black uppercase">
+                  Pivoting My Path
+                </h3>
+                <p className="mt-3 font-serif text-lg italic font-light text-[#999999] sm:text-xl">
+                  &quot;Originally admitted to Koç University School of
+                  Medicine, I pivoted to Industrial Engineering and Economics
+                  to fully focus on quantitative optimization, data systems,
+                  and technology—aligning my academic foundation with my
+                  passion for analytical problem-solving.&quot;
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-sm font-semibold tracking-wide text-black uppercase">
-                Pivoting My Path
-              </h3>
-              <p className="mt-3 font-serif text-lg italic font-light text-[#999999] sm:text-xl">
-                &quot;Originally admitted to Koç University School of
-                Medicine, I pivoted to Industrial Engineering and Economics
-                to fully focus on quantitative optimization, data systems,
-                and technology—aligning my academic foundation with my
-                passion for analytical problem-solving.&quot;
-              </p>
-            </div>
+
+            <SiteDock />
           </div>
-
-          <SiteDock />
         </div>
       </section>
     </>
