@@ -152,7 +152,7 @@ export default function Home() {
 
       <section
         id="hobbies"
-        className="flex h-screen w-full flex-col justify-center gap-8 overflow-hidden px-6 py-4 sm:px-16"
+        className="flex min-h-screen w-full flex-col justify-center gap-8 px-6 py-20 sm:px-16 sm:py-4"
       >
         <h2 className="font-serif text-2xl font-light lowercase tracking-tight text-black sm:text-4xl">
           hobbies.
