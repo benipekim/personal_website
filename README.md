@@ -1,4 +1,5 @@
-my_personal_website: https://ipekates.vercel.app
+my_personal_website: https://ipekates-51gn0p46l-benipekim1.vercel.app
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
