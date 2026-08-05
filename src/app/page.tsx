@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Link as LinkIcon, Lightbulb } from "lucide-react";
+import { Link as LinkIcon, Lightbulb, Target } from "lucide-react";
 import { ShaderBackground } from "@/components/ui/simplex-noise-spots";
+import { SiteDock } from "@/components/site-dock";
 
 function Bold({ children }: { children: React.ReactNode }) {
   return (
@@ -150,22 +151,6 @@ export default function Home() {
       </section>
 
       <section
-        id="social-media"
-        className="relative flex min-h-screen w-full items-center justify-center overflow-hidden"
-      >
-        <Image
-          src="/section-background.png"
-          alt=""
-          fill
-          className="object-cover"
-          priority={false}
-        />
-        <h2 className="relative z-10 text-3xl font-semibold tracking-tight">
-          Social Media
-        </h2>
-      </section>
-
-      <section
         id="hobbies"
         className="flex h-screen w-full flex-col justify-center gap-8 overflow-hidden px-6 py-4 sm:px-16"
       >
@@ -249,6 +234,53 @@ export default function Home() {
               className="object-contain"
             />
           </div>
+        </div>
+      </section>
+
+      <section
+        id="social-media"
+        className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-6"
+      >
+        <Image
+          src="/section-background.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority={false}
+        />
+        <div className="relative z-10 flex w-full max-w-xl flex-col items-center gap-8 text-center">
+          <a
+            href="/İpekAteş_CV.docx"
+            download
+            className="rounded-2xl bg-black px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-black/80"
+          >
+            CV
+          </a>
+
+          <h2 className="text-3xl font-semibold tracking-tight">
+            Connect &amp; Beyond
+          </h2>
+
+          <div className="flex gap-3 text-left">
+            <div className="flex flex-col items-center pt-0.5">
+              <Target className="size-4 shrink-0 text-black" />
+              <div className="mt-2 w-px flex-1 bg-black/15" />
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold tracking-wide text-black uppercase">
+                Pivoting My Path
+              </h3>
+              <p className="mt-3 font-serif text-lg italic font-light text-[#999999] sm:text-xl">
+                &quot;Originally admitted to Koç University School of
+                Medicine, I pivoted to Industrial Engineering and Economics
+                to fully focus on quantitative optimization, data systems,
+                and technology—aligning my academic foundation with my
+                passion for analytical problem-solving.&quot;
+              </p>
+            </div>
+          </div>
+
+          <SiteDock />
         </div>
       </section>
     </>

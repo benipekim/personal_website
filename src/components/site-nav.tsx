@@ -8,7 +8,7 @@ const tabs = [
   { type: "separator" as const },
   { title: "Career", icon: Trophy },
   { title: "Hobbies", icon: Heart },
-  { title: "Social Media", icon: Share2 },
+  { title: "Connect & Beyond", icon: Share2 },
 ];
 
 const SECTION_BY_INDEX: Record<number, string> = {
